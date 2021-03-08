@@ -1,4 +1,7 @@
-import pyautogui as pg
+try:
+    import pyautogui as pg
+except ModuleNotFoundError:
+    input('Install the required library: \'pyautogui\' before starting...\nPress enter to exit')
 import time
 import os
 
